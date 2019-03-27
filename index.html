@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+<style>
+
+
+
+
+	body{
+		background: #0f1934;
+	}
+
+	
+    /* LOGO */
+    /********/
+    .ngy2_logo {
+      border-left : none;
+      padding-left: 0;
+      color: #fff !important;
+      font-weight: bold;
+    }
+    
+    /* animated logo */
+    .ngy2_logo svg {
+        display: block;
+        letter-spacing: 1.5vw;
+        font-size: 3vw;
+    }
+    .ngy2_logo .text-copy {
+        fill: none;
+        stroke: #000;
+        stroke-dasharray: 6% 29%;
+        stroke-width: 0.5px;
+        stroke-dashoffset: 0%;
+        animation: stroke-offset 5.5s infinite linear;
+    }
+    .ngy2_logo .text-copy:nth-child(1){
+      stroke: #23CB99;
+      animation-delay: -1;
+    }
+    .ngy2_logo .text-copy:nth-child(2){
+      stroke: #46D6AB;
+      animation-delay: -2s;
+    }
+    .ngy2_logo .text-copy:nth-child(3){
+      stroke: #23CB99;
+      animation-delay: -3s;
+    }
+    .ngy2_logo .text-copy:nth-child(4){
+      stroke: #23CB99;
+      animation-delay: -4s;
+    }
+    .ngy2_logo .text-copy:nth-child(5){
+      stroke: #23CB99;
+      animation-delay: -5s;
+    }
+    @keyframes stroke-offset{
+      100% {stroke-dashoffset: -35%;}
+    }  
+</style>
+</head>
+<body>
+	
+
+	<div class="body">
+		<h3 style="margin-top:0px;font-weight:normal;letter-spacing: 1.5vw;font-size:3vw;">
+		<span class=" ngy2_logo">
+		<svg viewBox="0 0 550 100">
+		<symbol id="s-text">
+		<text text-anchor="middle" x="50%" y="80%">Nevadia</text>
+		</symbol>
+		<g class="g-ants">
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		</g>
+		</svg>
+		</span>
+		</h3>
+	</div>
+	
+
+
+</body>
+</html>
